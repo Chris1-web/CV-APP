@@ -29,11 +29,12 @@ class Social extends Component {
       changeWebsite,
       changePhone,
       changeEmail,
+      editSocialForm,
     } = this.props;
     const { editSocial } = this.state;
     return (
       <div>
-        {editMode && (
+        {editMode && editSocialForm && (
           <button className="edit-social-btn" onClick={this.toggleForm}>
             {!editSocial && "EDIT"}
             {editSocial && "BACK"}
@@ -54,7 +55,7 @@ class Social extends Component {
               <p>{socialContent.email}</p>
             </li>
           </ul>
-          {editSocial && (
+          {editSocial && editSocialForm && (
             <form className="social-form">
               <div>
                 <input

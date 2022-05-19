@@ -379,3 +379,20 @@ button.add-experience-btn {
   flex-direction: column;
   font-size: 2rem;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-github-icon {
+  width: 1.6rem;
+  height: auto;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}

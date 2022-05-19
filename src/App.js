@@ -4,11 +4,13 @@ import Personal from "./components/Personal.js";
 import Education from "./components/Education.js";
 import Practical from "./components/Practical.js";
 import Social from "./components/Social.js";
+
 import face from "./images/face.jpg";
 import website from "./images/wifi.png";
 import mail from "./images/mail.png";
 import phone from "./images/phone.png";
 import "./App.css";
+import Footer from "./components/Footer.js";
 
 const LOREM =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.";
@@ -25,6 +27,7 @@ class App extends Component {
       editChosenExperience: false,
       newExperienceSubmit: false,
       editMode: false,
+      editSocialForm: true,
       personalInfo: {
         name: "daniel joel wilson",
         profession: "Web Developer",
@@ -268,9 +271,16 @@ class App extends Component {
     !this.state.editMode
       ? this.setState({
           editMode: true,
+          editSocialForm: true,
         })
       : this.setState({
           editMode: false,
+          editPersonal: false,
+          editEducation: false,
+          editChosenEducation: false,
+          editExperience: false,
+          editChosenExperience: false,
+          editSocialForm: false,
         });
   }
 
@@ -435,6 +445,7 @@ class App extends Component {
       experienceContent,
       editChosenExperience,
       socialContent,
+      editSocialForm,
     } = this.state;
     return (
       <div className="container">
@@ -505,7 +516,9 @@ class App extends Component {
           changeWebsite={this.changeWebsite}
           changePhone={this.changePhone}
           changeEmail={this.changeEmail}
+          editSocialForm={editSocialForm}
         />
+        <Footer />
       </div>
     );
   }
