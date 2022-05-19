@@ -348,6 +348,13 @@ class App extends Component {
       ? this.setState({
           editExperience: false,
           editChosenExperience: false,
+          experienceContent: {
+            id: "",
+            position: "",
+            year: "",
+            company: "",
+            description: "",
+          },
         })
       : this.setState({
           editExperience: true,
@@ -412,7 +419,6 @@ class App extends Component {
         },
       });
     }
-    console.log(e.target.files);
   };
 
   render() {
