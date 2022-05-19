@@ -50,6 +50,15 @@ input {
   cursor: pointer;
 }
 
+.edit-social-btn {
+  background-color: #1e3a8a;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+}
+
 .lower-profile {
   text-align: center;
   padding: 1.2rem 0;
@@ -178,6 +187,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-size: 1.2rem;
 }
 
 .social-links img {
@@ -204,14 +214,16 @@ ul {
   font-weight: 600;
 }
 
-.education-form div {
+.education-form div,
+.experience-form div {
   font-size: 1.7rem;
   font-weight: 600;
   gap: 0.2rem;
 }
 
 .personal-form input,
-.education input {
+.education input,
+.experience-form input {
   padding: 0.5rem 1rem;
   width: 20rem;
   border: 0.2rem solid #4b61a1;
@@ -222,7 +234,8 @@ ul {
   text-align: right;
 }
 
-.personal-form textarea {
+.personal-form textarea,
+.experience-form textarea {
   border: 0.2rem solid #4b61a1;
 }
 
@@ -238,7 +251,8 @@ ul {
 }
 
 .name-and-profession-form div,
-.education-form div {
+.education-form div,
+.experience-form div {
   display: flex;
   flex-direction: column;
 }
@@ -247,7 +261,8 @@ ul {
   text-align: right;
 }
 
-.personal form textarea {
+.personal form textarea,
+.experience-form textarea {
   width: 100%;
   height: 7rem;
 }
@@ -265,7 +280,8 @@ ul {
 
 .personal-form button,
 .education-form button,
-.add-education-form {
+.add-education-form,
+.experience-form button {
   padding: 0.5rem 1.5rem;
   background-color: #4b61a1;
   color: #fff;
@@ -275,6 +291,7 @@ ul {
 }
 
 .education-form button,
+.experience-form button,
 .add-education-form {
   width: 50%;
   display: flex;
@@ -288,10 +305,77 @@ ul {
 
 .done-education-btn {
   position: absolute;
-  padding: 0rem;
   padding: 0.5rem;
   background-color: #4b61a1;
   color: #fff;
   cursor: pointer;
   border: none;
+}
+
+.experience {
+  position: relative;
+}
+
+.edit-experience-btn {
+  position: absolute;
+  right: 0;
+  padding: 0.5rem;
+  background-color: #4b61a1;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-education-btn,
+.delete-education-btn,
+.add-education-btn,
+.add-experience-btn,
+.view-mode {
+  padding: 0.07rem 0.5rem;
+  cursor: pointer;
+  background: #4b61a1;
+  color: #fff;
+  border: none;
+}
+
+.delete-education-btn {
+  background: red;
+}
+
+button.add-education-btn,
+button.add-experience-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.view-mode {
+  padding: 0.7rem 1rem;
+}
+
+.experience-form input {
+  width: 100%;
+}
+
+.social-form {
+  display: flex;
+  gap: 0.2rem;
+  background-color: white;
+}
+
+.social-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+.social-form input {
+  padding: 0.1rem;
+  border: 0.2rem solid #4b61a1;
+}
+
+.image-upload-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
 }
