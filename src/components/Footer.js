@@ -11,7 +11,11 @@ class Footer extends Component {
             target="_blank"
             rel="noreferrer"
           >
-            <img alt="github icon" class="contact-github-icon" src={github} />
+            <img
+              alt="github icon"
+              className="contact-github-icon"
+              src={github}
+            />
           </a>
         </p>
       </footer>
