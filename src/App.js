@@ -275,7 +275,7 @@ function App() {
   };
 
   const deleteExperience = (id) => {
-    setExperienceArray(this.state.experienceArray.filter((el) => el.id !== id));
+    setExperienceArray(experienceArray.filter((el) => el.id !== id));
   };
 
   const addNewExperience = () => {
