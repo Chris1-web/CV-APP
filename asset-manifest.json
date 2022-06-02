@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CV-APP/static/css/main.9b7d0cd7.css",
-    "main.js": "/CV-APP/static/js/main.a163aa83.js",
+    "main.js": "/CV-APP/static/js/main.3ff67221.js",
     "static/media/face.jpg": "/CV-APP/static/media/face.53bfd37ce7d45aa74d2d.jpg",
     "index.html": "/CV-APP/index.html",
     "main.9b7d0cd7.css.map": "/CV-APP/static/css/main.9b7d0cd7.css.map",
-    "main.a163aa83.js.map": "/CV-APP/static/js/main.a163aa83.js.map"
+    "main.3ff67221.js.map": "/CV-APP/static/js/main.3ff67221.js.map"
   },
   "entrypoints": [
     "static/css/main.9b7d0cd7.css",
-    "static/js/main.a163aa83.js"
+    "static/js/main.3ff67221.js"
   ]
 }
