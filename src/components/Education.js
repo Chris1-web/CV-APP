@@ -36,16 +36,13 @@ function Education(props) {
                       <div>
                         <button
                           className="delete-education-btn"
-                          onClick={deleteEducation.bind(this, educationInfo.id)}
+                          onClick={() => deleteEducation(educationInfo.id)}
                         >
                           delete
                         </button>
                         <button
                           className="edit-education-btn"
-                          onClick={editSelectEducation.bind(
-                            this,
-                            educationInfo.id
-                          )}
+                          onClick={() => editSelectEducation(educationInfo.id)}
                         >
                           edit
                         </button>

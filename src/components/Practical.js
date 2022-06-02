@@ -44,13 +44,13 @@ function Practical(props) {
                   <div>
                     <button
                       className="edit-education-btn"
-                      onClick={editCurrentExperience.bind(this, experience.id)}
+                      onClick={() => editCurrentExperience(experience.id)}
                     >
                       edit
                     </button>
                     <button
                       className="delete-education-btn"
-                      onClick={deleteExperience.bind(this, experience.id)}
+                      onClick={() => deleteExperience(experience.id)}
                     >
                       delete
                     </button>
